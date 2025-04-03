@@ -1,4 +1,4 @@
-![Chapoteos Analytics](/Users/cesarchaparro/Desktop/GitHub/Chapoteos/git/assets/chapoteos.png)
+![Chapoteos Analytics](/assets/chapoteos.png)
 
 # Chapoteos Marketing Analytics Project
 
