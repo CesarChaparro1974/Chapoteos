@@ -37,3 +37,4 @@ long_lived_token.txt
 .DS_Store
 Thumbs.db
 .qodo
+credentials.json
