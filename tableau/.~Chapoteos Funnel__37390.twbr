@@ -9,7 +9,7 @@
     <BasicButtonObject />
     <CollapsiblePane />
     <DashboardExportButton />
-    <Extensions />
+    <DashboardMttwImageObject />
     <ISO8601WeekNumbering_SP1 />
     <_.fcp.IndividualControlFormatting.true...IndividualControlFormatting />
     <MarkAnimation />
@@ -1434,7 +1434,7 @@
       <column-instance column='[Sesiones]' derivation='Sum' name='[sum:Sesiones:qk]' pivot='key' type='quantitative' />
       <column-instance column='[Usuarios activos]' derivation='Sum' name='[sum:Usuarios activos:qk]' pivot='key' type='quantitative' />
       <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
-        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='/var/folders/qk/q0fv26q13m760q3ch0fljs240000gn/T/tableau-temp/#TableauTemp_01bg5ow0nbyjvu16esk3509bx16m.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='/var/folders/qk/q0fv26q13m760q3ch0fljs240000gn/T/tableau-temp/TEMP_0b8jcfu0mdxqfs14dsw8e0ufo3em.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
           <relation name='Extract' table='[Extract].[Extract]' type='table' />
           <metadata-records>
             <metadata-record class='column'>
@@ -1810,7 +1810,7 @@
       </column>
       <column caption='conversions_google_ads.csv' datatype='table' name='[__tableau_internal_object_id__].[conversions_google_ads.csv_B91F7AD09FD34395B97220F4406FCC8B]' role='measure' type='quantitative' />
       <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
-        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='/var/folders/qk/q0fv26q13m760q3ch0fljs240000gn/T/tableau-temp/#TableauTemp_1kjfi881183jta11ysctf1lg3ls6.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='/var/folders/qk/q0fv26q13m760q3ch0fljs240000gn/T/tableau-temp/TEMP_0h8mw6m0t2loeg1dcsctp0a4ya3u.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
           <relation name='Extract' table='[Extract].[Extract]' type='table' />
           <metadata-records>
             <metadata-record class='column'>
@@ -4829,47 +4829,47 @@
             </map>
           </encoding>
           <encoding attr='color' field='[none:Calculation_2631087411070447625:nk]' type='palette'>
-            <map to='#051c61'>
-              <bucket>&quot;Natación infantil&quot;</bucket>
-            </map>
-            <map to='#073e92'>
-              <bucket>&quot;móbil&quot;</bucket>
-            </map>
-            <map to='#0e6ece'>
-              <bucket>&quot;Matronatación&quot;</bucket>
-            </map>
-            <map to='#0e6ece'>
-              <bucket>&quot;ordenador&quot;</bucket>
-            </map>
             <map to='#2a5783'>
               <bucket>&quot;Búsqueda | General&quot;</bucket>
             </map>
-            <map to='#2d9ced'>
-              <bucket>&quot;Clases natación&quot;</bucket>
+            <map to='#2a5783'>
+              <bucket>&quot;móbil&quot;</bucket>
             </map>
-            <map to='#2d9ced'>
-              <bucket>&quot;otro&quot;</bucket>
+            <map to='#2a5783'>
+              <bucket>&quot;Natación infantil&quot;</bucket>
+            </map>
+            <map to='#4e7fac'>
+              <bucket>&quot;Matronatación&quot;</bucket>
+            </map>
+            <map to='#4e7fac'>
+              <bucket>&quot;ordenador&quot;</bucket>
             </map>
             <map to='#5485b2'>
               <bucket>&quot;Pmax | Promoción Nuevo Centro&quot;</bucket>
             </map>
-            <map to='#68ceee'>
-              <bucket>&quot;Natación adultos&quot;</bucket>
+            <map to='#72a3c9'>
+              <bucket>&quot;otro&quot;</bucket>
             </map>
-            <map to='#68ceee'>
-              <bucket>&quot;tablet&quot;</bucket>
+            <map to='#79aacf'>
+              <bucket>&quot;Clases natación&quot;</bucket>
+            </map>
+            <map to='#92c0df'>
+              <bucket>&quot;Natación adultos&quot;</bucket>
             </map>
             <map to='#92c0df'>
               <bucket>&quot;Pmax | Promoción Bonos - RMK&quot;</bucket>
             </map>
-            <map to='#96f2ee'>
-              <bucket>&quot;Natación embarazadas&quot;</bucket>
+            <map to='#92c0df'>
+              <bucket>&quot;tablet&quot;</bucket>
             </map>
-            <map to='#96f2ee'>
-              <bucket>&quot;TV&quot;</bucket>
+            <map to='#b9ddf1'>
+              <bucket>&quot;Natación embarazadas&quot;</bucket>
             </map>
             <map to='#b9ddf1'>
               <bucket>&quot;Pmax | Promoción Bonos - MOFU&quot;</bucket>
+            </map>
+            <map to='#b9ddf1'>
+              <bucket>&quot;TV&quot;</bucket>
             </map>
           </encoding>
           <encoding attr='color' field='[:Measure Names]' type='palette'>
@@ -5372,6 +5372,14 @@
             <encodings>
               <color column='[federated.0i9dqy51kzadz81dizvjz0m8rut6].[none:Calculation_2631087411070447625:nk]' />
             </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true'><![CDATA[<[federated.0i9dqy51kzadz81dizvjz0m8rut6].[none:Calculation_2631087411070447625:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Impresiones:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0i9dqy51kzadz81dizvjz0m8rut6].[usr:Calculation_2631087411068559367:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
             <style>
               <style-rule element='mark'>
                 <format attr='mark-labels-cull' value='true' />
@@ -5546,6 +5554,14 @@
             <encodings>
               <color column='[federated.1lp1asc0fhqnv91gyifz60h34q1a].[:Measure Names]' />
             </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true'><![CDATA[<[federated.1lp1asc0fhqnv91gyifz60h34q1a].[none:Calculation_2631087411079536656:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'><![CDATA[<[federated.1lp1asc0fhqnv91gyifz60h34q1a].[:Measure Names]>:	]]></run>
+                <run bold='true'><![CDATA[<[federated.1lp1asc0fhqnv91gyifz60h34q1a].[Multiple Values]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
           </pane>
         </panes>
         <rows>([federated.1lp1asc0fhqnv91gyifz60h34q1a].[none:Calculation_2631087411079536656:nk] / [federated.1lp1asc0fhqnv91gyifz60h34q1a].[:Measure Names])</rows>
@@ -5553,7 +5569,7 @@
       </table>
       <simple-id uuid='{FECA4738-15F2-489F-A967-9934D3A410BB}' />
     </worksheet>
-    <worksheet name='Awareness  '>
+    <worksheet name='Awareness    '>
       <layout-options>
         <title>
           <formatted-text>
@@ -5656,6 +5672,7 @@
           <style-rule element='header'>
             <format attr='border-width' data-class='total' value='0' />
             <format attr='border-style' data-class='total' value='none' />
+            <format attr='width' field='[federated.1lp1asc0fhqnv91gyifz60h34q1a].[none:Calculation_2631087411079536656:nk]' value='112' />
           </style-rule>
           <style-rule element='label'>
             <format attr='font-weight' field='[federated.1lp1asc0fhqnv91gyifz60h34q1a].[none:Calculation_2631087411079536656:nk]' value='bold' />
@@ -5714,6 +5731,14 @@
             <encodings>
               <color column='[federated.1lp1asc0fhqnv91gyifz60h34q1a].[:Measure Names]' />
             </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true'><![CDATA[<[federated.1lp1asc0fhqnv91gyifz60h34q1a].[none:Calculation_2631087411079536656:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'><![CDATA[<[federated.1lp1asc0fhqnv91gyifz60h34q1a].[:Measure Names]>:	]]></run>
+                <run bold='true'><![CDATA[<[federated.1lp1asc0fhqnv91gyifz60h34q1a].[Multiple Values]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
           </pane>
         </panes>
         <rows>([federated.1lp1asc0fhqnv91gyifz60h34q1a].[none:Calculation_2631087411079536656:nk] / [federated.1lp1asc0fhqnv91gyifz60h34q1a].[:Measure Names])</rows>
@@ -5872,6 +5897,14 @@
             <encodings>
               <color column='[federated.158grqn05wb6k41fhtaca1m0eptk].[:Measure Names]' />
             </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true'><![CDATA[<[federated.158grqn05wb6k41fhtaca1m0eptk].[none:Calculation_2631087412419084364:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Impresiones:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.158grqn05wb6k41fhtaca1m0eptk].[sum:Impresiones:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
             <style>
               <style-rule element='trendline'>
                 <format attr='stroke-size' value='0' />
@@ -5885,7 +5918,203 @@
       </table>
       <simple-id uuid='{0EC6309E-28D3-47DC-8278-CC0C84997268}' />
     </worksheet>
-    <worksheet name='Conversion'>
+    <worksheet name='Conversiones'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#4e79a7' fontsize='11'><![CDATA[                                                                      <Sheet Name>]]></run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='concatenated_landing_page_df' name='federated.158grqn05wb6k41fhtaca1m0eptk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.158grqn05wb6k41fhtaca1m0eptk'>
+            <column datatype='integer' name='[Acciones categoría de conversión]' role='measure' type='quantitative' />
+            <column caption='Aggregated Conversion Actions' datatype='integer' datatype-customized='true' name='[Calculation_2631087412430807117]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='INT([Acciones categoría de conversión] / 10)' />
+            </column>
+            <column datatype='string' name='[Categoría de conversión]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;Envío de formulario&quot;' value='Envío formulario' />
+                <alias key='&quot;Llamada de teléfono&quot;' value='Llamada teléfono' />
+              </aliases>
+            </column>
+            <column-instance column='[Categoría de conversión]' derivation='None' name='[none:Categoría de conversión:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Acciones categoría de conversión]' derivation='Sum' name='[sum:Acciones categoría de conversión:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_2631087412430807117]' derivation='Sum' name='[sum:Calculation_2631087412430807117:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.158grqn05wb6k41fhtaca1m0eptk].[none:Categoría de conversión:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Categoría de conversión:nk]' member='&quot;Contacto&quot;' />
+              <groupfilter function='member' level='[none:Categoría de conversión:nk]' member='&quot;Engagement&quot;' />
+              <groupfilter function='member' level='[none:Categoría de conversión:nk]' member='&quot;Envío de formulario&quot;' />
+              <groupfilter function='member' level='[none:Categoría de conversión:nk]' member='&quot;Llamada de teléfono&quot;' />
+              <groupfilter function='member' level='[none:Categoría de conversión:nk]' member='&quot;Obtener dirección&quot;' />
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.158grqn05wb6k41fhtaca1m0eptk].[none:Categoría de conversión:nk]' direction='DESC' using='[federated.158grqn05wb6k41fhtaca1m0eptk].[sum:Acciones categoría de conversión:qk]' />
+          <slices>
+            <column>[federated.158grqn05wb6k41fhtaca1m0eptk].[none:Categoría de conversión:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.158grqn05wb6k41fhtaca1m0eptk].[sum:Calculation_2631087412430807117:qk]' scope='cols' value='Conversiones' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='total' scope='cols' value='0' />
+            <format attr='border-style' data-class='total' scope='cols' value='none' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-weight' field='[federated.158grqn05wb6k41fhtaca1m0eptk].[none:Categoría de conversión:nk]' value='bold' />
+            <format attr='vertical-align' field='[federated.158grqn05wb6k41fhtaca1m0eptk].[none:Categoría de conversión:nk]' value='center' />
+            <format attr='text-align' field='[federated.158grqn05wb6k41fhtaca1m0eptk].[none:Categoría de conversión:nk]' value='right' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' scope='cols' value='0' />
+            <format attr='border-style' data-class='total' scope='cols' value='none' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.158grqn05wb6k41fhtaca1m0eptk].[none:Categoría de conversión:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Categoría de conversión:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.158grqn05wb6k41fhtaca1m0eptk].[none:Categoría de conversión:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true'><![CDATA[<[federated.158grqn05wb6k41fhtaca1m0eptk].[sum:Calculation_2631087412430807117:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='12' />
+                <format attr='font-weight' value='bold' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.158grqn05wb6k41fhtaca1m0eptk].[none:Categoría de conversión:nk]</rows>
+        <cols>[federated.158grqn05wb6k41fhtaca1m0eptk].[sum:Calculation_2631087412430807117:qk]</cols>
+        <mark-labels>
+          <mark-label id='0' label-state='off'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.158grqn05wb6k41fhtaca1m0eptk].[sum:Calculation_2631087412430807117:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.158grqn05wb6k41fhtaca1m0eptk].[none:Categoría de conversión:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.158grqn05wb6k41fhtaca1m0eptk].[none:Categoría de conversión:nk]</field>
+                  <field>[federated.158grqn05wb6k41fhtaca1m0eptk].[sum:Acciones categoría de conversión:qk]</field>
+                  <field>[federated.158grqn05wb6k41fhtaca1m0eptk].[sum:Calculation_2631087412430807117:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Engagement&quot;</value>
+                <value>3540</value>
+                <value>354</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='1' label-state='off'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.158grqn05wb6k41fhtaca1m0eptk].[sum:Calculation_2631087412430807117:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.158grqn05wb6k41fhtaca1m0eptk].[none:Categoría de conversión:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.158grqn05wb6k41fhtaca1m0eptk].[none:Categoría de conversión:nk]</field>
+                  <field>[federated.158grqn05wb6k41fhtaca1m0eptk].[sum:Acciones categoría de conversión:qk]</field>
+                  <field>[federated.158grqn05wb6k41fhtaca1m0eptk].[sum:Calculation_2631087412430807117:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Obtener dirección&quot;</value>
+                <value>1790</value>
+                <value>179</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='2' label-state='off'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.158grqn05wb6k41fhtaca1m0eptk].[sum:Calculation_2631087412430807117:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.158grqn05wb6k41fhtaca1m0eptk].[none:Categoría de conversión:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.158grqn05wb6k41fhtaca1m0eptk].[none:Categoría de conversión:nk]</field>
+                  <field>[federated.158grqn05wb6k41fhtaca1m0eptk].[sum:Acciones categoría de conversión:qk]</field>
+                  <field>[federated.158grqn05wb6k41fhtaca1m0eptk].[sum:Calculation_2631087412430807117:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Contacto&quot;</value>
+                <value>380</value>
+                <value>38</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{4CE9A0CD-2BF1-4C9E-951C-5186FC4B4FD6}' />
+    </worksheet>
+    <worksheet name='Conversión'>
       <layout-options>
         <title>
           <formatted-text>
@@ -6026,6 +6255,14 @@
             <encodings>
               <color column='[federated.0i9dqy51kzadz81dizvjz0m8rut6].[Multiple Values]' />
             </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true'><![CDATA[<[federated.0i9dqy51kzadz81dizvjz0m8rut6].[none:Calculation_2631087411070447625:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'><![CDATA[<[federated.0i9dqy51kzadz81dizvjz0m8rut6].[:Measure Names]>:	]]></run>
+                <run bold='true'><![CDATA[<[federated.0i9dqy51kzadz81dizvjz0m8rut6].[Multiple Values]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
             <style>
               <style-rule element='cell'>
                 <format attr='text-align' value='center' />
@@ -6051,7 +6288,165 @@
       </table>
       <simple-id uuid='{A8289EF5-84A8-40CD-92AF-905B1FC22980}' />
     </worksheet>
-    <worksheet name='Conversion '>
+    <worksheet name='Conversión '>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#4e79a7' fontsize='11'>Æ  </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='raw_data' name='federated.1lp1asc0fhqnv91gyifz60h34q1a' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Aggregation level Meta' datatype='string' name='[Parameter 2]' param-domain-type='list' role='measure' type='nominal' value='&quot;Campaña&quot;'>
+              <calculation class='tableau' formula='&quot;Campaña&quot;' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.1lp1asc0fhqnv91gyifz60h34q1a'>
+            <column caption='AdSetAdRecallEstimation' datatype='integer' name='[AdSetFollowsLikes (copy)_2631087411306582064]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='{FIXED [Set anuncios], [Plataforma]: SUM([Recuerdo anuncio estimado])}' />
+            </column>
+            <column datatype='string' name='[Anuncio]' role='dimension' type='nominal' />
+            <column caption='Dynamic Dimension' datatype='string' datatype-customized='true' name='[Calculation_2631087411079536656]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Parameters].[Parameter 2] = &quot;Campaña&quot; THEN &#10;    [Campaña]&#10;ELSEIF [Parameters].[Parameter 2] = &quot;Set anuncios&quot; THEN &#10;    [Set anuncios]&#10;ELSEIF [Parameters].[Parameter 2] = &quot;Anuncio&quot; THEN &#10;    [Anuncio]&#10;ELSEIF [Parameters].[Parameter 2] = &quot;Plataforma&quot; THEN &#10;    [Plataforma]&#10;END' />
+              <aliases>
+                <alias key='&quot;audience_network&quot;' value='network' />
+              </aliases>
+            </column>
+            <column datatype='string' name='[Campaña]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Clics en link]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Follows o likes]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Leads de sitio web]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Leads]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Meta leads]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Plataforma]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Recuerdo anuncio estimado]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Set anuncios]' role='dimension' type='nominal' />
+            <column datatype='real' datatype-customized='true' name='[Ventas]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_2631087411079536656]' derivation='None' name='[none:Calculation_2631087411079536656:nk]' pivot='key' type='nominal' />
+            <column-instance column='[AdSetFollowsLikes (copy)_2631087411306582064]' derivation='Sum' name='[sum:AdSetFollowsLikes (copy)_2631087411306582064:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Clics en link]' derivation='Sum' name='[sum:Clics en link:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Follows o likes]' derivation='Sum' name='[sum:Follows o likes:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Leads de sitio web]' derivation='Sum' name='[sum:Leads de sitio web:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Leads]' derivation='Sum' name='[sum:Leads:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Meta leads]' derivation='Sum' name='[sum:Meta leads:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Recuerdo anuncio estimado]' derivation='Sum' name='[sum:Recuerdo anuncio estimado:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Ventas]' derivation='Sum' name='[sum:Ventas:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1lp1asc0fhqnv91gyifz60h34q1a].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1lp1asc0fhqnv91gyifz60h34q1a].[sum:Clics en link:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1lp1asc0fhqnv91gyifz60h34q1a].[sum:Follows o likes:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1lp1asc0fhqnv91gyifz60h34q1a].[sum:Leads:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1lp1asc0fhqnv91gyifz60h34q1a].[sum:Leads de sitio web:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1lp1asc0fhqnv91gyifz60h34q1a].[sum:Meta leads:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1lp1asc0fhqnv91gyifz60h34q1a].[sum:Recuerdo anuncio estimado:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1lp1asc0fhqnv91gyifz60h34q1a].[sum:Ventas:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1lp1asc0fhqnv91gyifz60h34q1a].[none:Calculation_2631087411079536656:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Calculation_2631087411079536656:nk]' member='&quot;Aipap_conversion&quot;' />
+              <groupfilter function='member' level='[none:Calculation_2631087411079536656:nk]' member='&quot;Aipap_reconocimiento_marca&quot;' />
+              <groupfilter function='member' level='[none:Calculation_2631087411079536656:nk]' member='&quot;audience_network&quot;' />
+              <groupfilter function='member' level='[none:Calculation_2631087411079536656:nk]' member='&quot;Campaña_ventas&quot;' />
+              <groupfilter function='member' level='[none:Calculation_2631087411079536656:nk]' member='&quot;Centro_villalkor&quot;' />
+              <groupfilter function='member' level='[none:Calculation_2631087411079536656:nk]' member='&quot;Chapoteos_29_nov&quot;' />
+              <groupfilter function='member' level='[none:Calculation_2631087411079536656:nk]' member='&quot;Chapoteos_4_oct&quot;' />
+              <groupfilter function='member' level='[none:Calculation_2631087411079536656:nk]' member='&quot;Clientes_potenciales&quot;' />
+              <groupfilter function='member' level='[none:Calculation_2631087411079536656:nk]' member='&quot;Clientes_potenciales_ig&quot;' />
+              <groupfilter function='member' level='[none:Calculation_2631087411079536656:nk]' member='&quot;Clientes_potenciales_reel&quot;' />
+              <groupfilter function='member' level='[none:Calculation_2631087411079536656:nk]' member='&quot;Copia_chapoteos&quot;' />
+              <groupfilter function='member' level='[none:Calculation_2631087411079536656:nk]' member='&quot;Copia_clientes_potenciales&quot;' />
+              <groupfilter function='member' level='[none:Calculation_2631087411079536656:nk]' member='&quot;Copia_imagen_julio_24&quot;' />
+              <groupfilter function='member' level='[none:Calculation_2631087411079536656:nk]' member='&quot;Embarazadas_anuncio&quot;' />
+              <groupfilter function='member' level='[none:Calculation_2631087411079536656:nk]' member='&quot;facebook&quot;' />
+              <groupfilter function='member' level='[none:Calculation_2631087411079536656:nk]' member='&quot;instagram&quot;' />
+              <groupfilter function='member' level='[none:Calculation_2631087411079536656:nk]' member='&quot;Matro_intereses_conversion&quot;' />
+              <groupfilter function='member' level='[none:Calculation_2631087411079536656:nk]' member='&quot;Matronatacion_conversion&quot;' />
+              <groupfilter function='member' level='[none:Calculation_2631087411079536656:nk]' member='&quot;Monteclaro&quot;' />
+              <groupfilter function='member' level='[none:Calculation_2631087411079536656:nk]' member='&quot;Natacion_bebes_chapoteos&quot;' />
+              <groupfilter function='member' level='[none:Calculation_2631087411079536656:nk]' member='&quot;Nuevo_centro_monteclaro&quot;' />
+              <groupfilter function='member' level='[none:Calculation_2631087411079536656:nk]' member='&quot;Nuevo_monteclaro&quot;' />
+              <groupfilter function='member' level='[none:Calculation_2631087411079536656:nk]' member='&quot;Post_chapoteos&quot;' />
+              <groupfilter function='member' level='[none:Calculation_2631087411079536656:nk]' member='&quot;Reconocimiento_marca&quot;' />
+              <groupfilter function='member' level='[none:Calculation_2631087411079536656:nk]' member='&quot;Reconocimiento_marca_aipap&quot;' />
+              <groupfilter function='member' level='[none:Calculation_2631087411079536656:nk]' member='&quot;Redes_seguidores&quot;' />
+              <groupfilter function='member' level='[none:Calculation_2631087411079536656:nk]' member='&quot;Reel_clientes_potenciales&quot;' />
+              <groupfilter function='member' level='[none:Calculation_2631087411079536656:nk]' member='&quot;Ventas&quot;' />
+              <groupfilter function='member' level='[none:Calculation_2631087411079536656:nk]' member='&quot;Video_matro&quot;' />
+              <groupfilter function='member' level='[none:Calculation_2631087411079536656:nk]' member='&quot;Video_villalkor&quot;' />
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.1lp1asc0fhqnv91gyifz60h34q1a].[none:Calculation_2631087411079536656:nk]' direction='DESC' using='[federated.1lp1asc0fhqnv91gyifz60h34q1a].[sum:AdSetFollowsLikes (copy)_2631087411306582064:qk]' />
+          <slices>
+            <column>[federated.1lp1asc0fhqnv91gyifz60h34q1a].[:Measure Names]</column>
+            <column>[federated.1lp1asc0fhqnv91gyifz60h34q1a].[none:Calculation_2631087411079536656:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.1lp1asc0fhqnv91gyifz60h34q1a].[none:Calculation_2631087411079536656:nk]' value='92' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' field='[federated.1lp1asc0fhqnv91gyifz60h34q1a].[:Measure Names]' value='8' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1lp1asc0fhqnv91gyifz60h34q1a].[Multiple Values]' palette='blue_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='header-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1lp1asc0fhqnv91gyifz60h34q1a].[Multiple Values]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true'><![CDATA[<[federated.1lp1asc0fhqnv91gyifz60h34q1a].[none:Calculation_2631087411079536656:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'><![CDATA[<[federated.1lp1asc0fhqnv91gyifz60h34q1a].[:Measure Names]>:	]]></run>
+                <run bold='true'><![CDATA[<[federated.1lp1asc0fhqnv91gyifz60h34q1a].[Multiple Values]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='9' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1lp1asc0fhqnv91gyifz60h34q1a].[none:Calculation_2631087411079536656:nk]</rows>
+        <cols>[federated.1lp1asc0fhqnv91gyifz60h34q1a].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{A0BB12AA-85DA-4AE9-88AD-84D8EAE4E24D}' />
+    </worksheet>
+    <worksheet name='Conversión  '>
       <layout-options>
         <title>
           <formatted-text>
@@ -6177,6 +6572,14 @@
             <encodings>
               <color column='[federated.1lp1asc0fhqnv91gyifz60h34q1a].[Multiple Values]' />
             </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true'><![CDATA[<[federated.1lp1asc0fhqnv91gyifz60h34q1a].[none:Calculation_2631087411079536656:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'><![CDATA[<[federated.1lp1asc0fhqnv91gyifz60h34q1a].[:Measure Names]>:	]]></run>
+                <run bold='true'><![CDATA[<[federated.1lp1asc0fhqnv91gyifz60h34q1a].[Multiple Values]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
             <style>
               <style-rule element='cell'>
                 <format attr='text-align' value='center' />
@@ -6197,341 +6600,6 @@
         <cols>[federated.1lp1asc0fhqnv91gyifz60h34q1a].[:Measure Names]</cols>
       </table>
       <simple-id uuid='{51D6D1CD-1C56-45D4-94BF-E681C1B69A3A}' />
-    </worksheet>
-    <worksheet name='Conversion (2)'>
-      <layout-options>
-        <title>
-          <formatted-text>
-            <run bold='true' fontcolor='#4e79a7' fontsize='11'>Æ  </run>
-          </formatted-text>
-        </title>
-      </layout-options>
-      <table>
-        <view>
-          <datasources>
-            <datasource caption='raw_data' name='federated.1lp1asc0fhqnv91gyifz60h34q1a' />
-            <datasource name='Parameters' />
-          </datasources>
-          <datasource-dependencies datasource='Parameters'>
-            <column caption='Aggregation level Meta' datatype='string' name='[Parameter 2]' param-domain-type='list' role='measure' type='nominal' value='&quot;Campaña&quot;'>
-              <calculation class='tableau' formula='&quot;Campaña&quot;' />
-            </column>
-          </datasource-dependencies>
-          <datasource-dependencies datasource='federated.1lp1asc0fhqnv91gyifz60h34q1a'>
-            <column caption='AdSetAdRecallEstimation' datatype='integer' name='[AdSetFollowsLikes (copy)_2631087411306582064]' role='measure' type='quantitative'>
-              <calculation class='tableau' formula='{FIXED [Set anuncios], [Plataforma]: SUM([Recuerdo anuncio estimado])}' />
-            </column>
-            <column datatype='string' name='[Anuncio]' role='dimension' type='nominal' />
-            <column caption='Dynamic Dimension' datatype='string' datatype-customized='true' name='[Calculation_2631087411079536656]' role='dimension' type='nominal'>
-              <calculation class='tableau' formula='IF [Parameters].[Parameter 2] = &quot;Campaña&quot; THEN &#10;    [Campaña]&#10;ELSEIF [Parameters].[Parameter 2] = &quot;Set anuncios&quot; THEN &#10;    [Set anuncios]&#10;ELSEIF [Parameters].[Parameter 2] = &quot;Anuncio&quot; THEN &#10;    [Anuncio]&#10;ELSEIF [Parameters].[Parameter 2] = &quot;Plataforma&quot; THEN &#10;    [Plataforma]&#10;END' />
-              <aliases>
-                <alias key='&quot;audience_network&quot;' value='network' />
-              </aliases>
-            </column>
-            <column datatype='string' name='[Campaña]' role='dimension' type='nominal' />
-            <column datatype='integer' name='[Clics en link]' role='measure' type='quantitative' />
-            <column datatype='integer' name='[Follows o likes]' role='measure' type='quantitative' />
-            <column datatype='integer' name='[Leads de sitio web]' role='measure' type='quantitative' />
-            <column datatype='integer' name='[Leads]' role='measure' type='quantitative' />
-            <column datatype='integer' name='[Meta leads]' role='measure' type='quantitative' />
-            <column datatype='string' name='[Plataforma]' role='dimension' type='nominal' />
-            <column datatype='integer' name='[Recuerdo anuncio estimado]' role='measure' type='quantitative' />
-            <column datatype='string' name='[Set anuncios]' role='dimension' type='nominal' />
-            <column datatype='real' datatype-customized='true' name='[Ventas]' role='measure' type='quantitative' />
-            <column-instance column='[Calculation_2631087411079536656]' derivation='None' name='[none:Calculation_2631087411079536656:nk]' pivot='key' type='nominal' />
-            <column-instance column='[AdSetFollowsLikes (copy)_2631087411306582064]' derivation='Sum' name='[sum:AdSetFollowsLikes (copy)_2631087411306582064:qk]' pivot='key' type='quantitative' />
-            <column-instance column='[Clics en link]' derivation='Sum' name='[sum:Clics en link:qk]' pivot='key' type='quantitative' />
-            <column-instance column='[Follows o likes]' derivation='Sum' name='[sum:Follows o likes:qk]' pivot='key' type='quantitative' />
-            <column-instance column='[Leads de sitio web]' derivation='Sum' name='[sum:Leads de sitio web:qk]' pivot='key' type='quantitative' />
-            <column-instance column='[Leads]' derivation='Sum' name='[sum:Leads:qk]' pivot='key' type='quantitative' />
-            <column-instance column='[Meta leads]' derivation='Sum' name='[sum:Meta leads:qk]' pivot='key' type='quantitative' />
-            <column-instance column='[Recuerdo anuncio estimado]' derivation='Sum' name='[sum:Recuerdo anuncio estimado:qk]' pivot='key' type='quantitative' />
-            <column-instance column='[Ventas]' derivation='Sum' name='[sum:Ventas:qk]' pivot='key' type='quantitative' />
-          </datasource-dependencies>
-          <filter class='categorical' column='[federated.1lp1asc0fhqnv91gyifz60h34q1a].[:Measure Names]'>
-            <groupfilter function='union' user:op='manual'>
-              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1lp1asc0fhqnv91gyifz60h34q1a].[sum:Clics en link:qk]&quot;' />
-              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1lp1asc0fhqnv91gyifz60h34q1a].[sum:Follows o likes:qk]&quot;' />
-              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1lp1asc0fhqnv91gyifz60h34q1a].[sum:Leads:qk]&quot;' />
-              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1lp1asc0fhqnv91gyifz60h34q1a].[sum:Leads de sitio web:qk]&quot;' />
-              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1lp1asc0fhqnv91gyifz60h34q1a].[sum:Meta leads:qk]&quot;' />
-              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1lp1asc0fhqnv91gyifz60h34q1a].[sum:Recuerdo anuncio estimado:qk]&quot;' />
-              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1lp1asc0fhqnv91gyifz60h34q1a].[sum:Ventas:qk]&quot;' />
-            </groupfilter>
-          </filter>
-          <filter class='categorical' column='[federated.1lp1asc0fhqnv91gyifz60h34q1a].[none:Calculation_2631087411079536656:nk]'>
-            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
-              <groupfilter function='member' level='[none:Calculation_2631087411079536656:nk]' member='&quot;Aipap_conversion&quot;' />
-              <groupfilter function='member' level='[none:Calculation_2631087411079536656:nk]' member='&quot;Aipap_reconocimiento_marca&quot;' />
-              <groupfilter function='member' level='[none:Calculation_2631087411079536656:nk]' member='&quot;audience_network&quot;' />
-              <groupfilter function='member' level='[none:Calculation_2631087411079536656:nk]' member='&quot;Campaña_ventas&quot;' />
-              <groupfilter function='member' level='[none:Calculation_2631087411079536656:nk]' member='&quot;Centro_villalkor&quot;' />
-              <groupfilter function='member' level='[none:Calculation_2631087411079536656:nk]' member='&quot;Chapoteos_29_nov&quot;' />
-              <groupfilter function='member' level='[none:Calculation_2631087411079536656:nk]' member='&quot;Chapoteos_4_oct&quot;' />
-              <groupfilter function='member' level='[none:Calculation_2631087411079536656:nk]' member='&quot;Clientes_potenciales&quot;' />
-              <groupfilter function='member' level='[none:Calculation_2631087411079536656:nk]' member='&quot;Clientes_potenciales_ig&quot;' />
-              <groupfilter function='member' level='[none:Calculation_2631087411079536656:nk]' member='&quot;Clientes_potenciales_reel&quot;' />
-              <groupfilter function='member' level='[none:Calculation_2631087411079536656:nk]' member='&quot;Copia_chapoteos&quot;' />
-              <groupfilter function='member' level='[none:Calculation_2631087411079536656:nk]' member='&quot;Copia_clientes_potenciales&quot;' />
-              <groupfilter function='member' level='[none:Calculation_2631087411079536656:nk]' member='&quot;Copia_imagen_julio_24&quot;' />
-              <groupfilter function='member' level='[none:Calculation_2631087411079536656:nk]' member='&quot;Embarazadas_anuncio&quot;' />
-              <groupfilter function='member' level='[none:Calculation_2631087411079536656:nk]' member='&quot;facebook&quot;' />
-              <groupfilter function='member' level='[none:Calculation_2631087411079536656:nk]' member='&quot;instagram&quot;' />
-              <groupfilter function='member' level='[none:Calculation_2631087411079536656:nk]' member='&quot;Matro_intereses_conversion&quot;' />
-              <groupfilter function='member' level='[none:Calculation_2631087411079536656:nk]' member='&quot;Matronatacion_conversion&quot;' />
-              <groupfilter function='member' level='[none:Calculation_2631087411079536656:nk]' member='&quot;Monteclaro&quot;' />
-              <groupfilter function='member' level='[none:Calculation_2631087411079536656:nk]' member='&quot;Natacion_bebes_chapoteos&quot;' />
-              <groupfilter function='member' level='[none:Calculation_2631087411079536656:nk]' member='&quot;Nuevo_centro_monteclaro&quot;' />
-              <groupfilter function='member' level='[none:Calculation_2631087411079536656:nk]' member='&quot;Nuevo_monteclaro&quot;' />
-              <groupfilter function='member' level='[none:Calculation_2631087411079536656:nk]' member='&quot;Post_chapoteos&quot;' />
-              <groupfilter function='member' level='[none:Calculation_2631087411079536656:nk]' member='&quot;Reconocimiento_marca&quot;' />
-              <groupfilter function='member' level='[none:Calculation_2631087411079536656:nk]' member='&quot;Reconocimiento_marca_aipap&quot;' />
-              <groupfilter function='member' level='[none:Calculation_2631087411079536656:nk]' member='&quot;Redes_seguidores&quot;' />
-              <groupfilter function='member' level='[none:Calculation_2631087411079536656:nk]' member='&quot;Reel_clientes_potenciales&quot;' />
-              <groupfilter function='member' level='[none:Calculation_2631087411079536656:nk]' member='&quot;Ventas&quot;' />
-              <groupfilter function='member' level='[none:Calculation_2631087411079536656:nk]' member='&quot;Video_matro&quot;' />
-              <groupfilter function='member' level='[none:Calculation_2631087411079536656:nk]' member='&quot;Video_villalkor&quot;' />
-            </groupfilter>
-          </filter>
-          <computed-sort column='[federated.1lp1asc0fhqnv91gyifz60h34q1a].[none:Calculation_2631087411079536656:nk]' direction='DESC' using='[federated.1lp1asc0fhqnv91gyifz60h34q1a].[sum:AdSetFollowsLikes (copy)_2631087411306582064:qk]' />
-          <slices>
-            <column>[federated.1lp1asc0fhqnv91gyifz60h34q1a].[:Measure Names]</column>
-            <column>[federated.1lp1asc0fhqnv91gyifz60h34q1a].[none:Calculation_2631087411079536656:nk]</column>
-          </slices>
-          <aggregation value='true' />
-        </view>
-        <style>
-          <style-rule element='label'>
-            <format attr='font-size' field='[federated.1lp1asc0fhqnv91gyifz60h34q1a].[:Measure Names]' value='8' />
-          </style-rule>
-          <style-rule element='mark'>
-            <encoding attr='color' field='[federated.1lp1asc0fhqnv91gyifz60h34q1a].[Multiple Values]' palette='blue_10_0' type='interpolated' />
-          </style-rule>
-          <style-rule element='worksheet'>
-            <format attr='display-field-labels' scope='rows' value='false' />
-          </style-rule>
-          <style-rule element='header-div'>
-            <format attr='stroke-size' scope='rows' value='0' />
-            <format attr='line-visibility' scope='rows' value='off' />
-          </style-rule>
-        </style>
-        <panes>
-          <pane selection-relaxation-option='selection-relaxation-allow'>
-            <view>
-              <breakdown value='auto' />
-            </view>
-            <mark class='Automatic' />
-            <encodings>
-              <color column='[federated.1lp1asc0fhqnv91gyifz60h34q1a].[Multiple Values]' />
-            </encodings>
-            <style>
-              <style-rule element='cell'>
-                <format attr='text-align' value='center' />
-                <format attr='vertical-align' value='center' />
-              </style-rule>
-              <style-rule element='datalabel'>
-                <format attr='color-mode' value='auto' />
-                <format attr='font-size' value='9' />
-              </style-rule>
-              <style-rule element='mark'>
-                <format attr='mark-labels-show' value='true' />
-                <format attr='mark-labels-cull' value='true' />
-              </style-rule>
-            </style>
-          </pane>
-        </panes>
-        <rows>[federated.1lp1asc0fhqnv91gyifz60h34q1a].[none:Calculation_2631087411079536656:nk]</rows>
-        <cols>[federated.1lp1asc0fhqnv91gyifz60h34q1a].[:Measure Names]</cols>
-      </table>
-      <simple-id uuid='{A0BB12AA-85DA-4AE9-88AD-84D8EAE4E24D}' />
-    </worksheet>
-    <worksheet name='Conversiones'>
-      <layout-options>
-        <title>
-          <formatted-text>
-            <run bold='true' fontalignment='1' fontcolor='#4e79a7' fontsize='11'><![CDATA[                                                                      <Sheet Name>]]></run>
-          </formatted-text>
-        </title>
-      </layout-options>
-      <table>
-        <view>
-          <datasources>
-            <datasource caption='concatenated_landing_page_df' name='federated.158grqn05wb6k41fhtaca1m0eptk' />
-          </datasources>
-          <datasource-dependencies datasource='federated.158grqn05wb6k41fhtaca1m0eptk'>
-            <column datatype='integer' name='[Acciones categoría de conversión]' role='measure' type='quantitative' />
-            <column caption='Aggregated Conversion Actions' datatype='integer' datatype-customized='true' name='[Calculation_2631087412430807117]' role='measure' type='quantitative'>
-              <calculation class='tableau' formula='INT([Acciones categoría de conversión] / 10)' />
-            </column>
-            <column datatype='string' name='[Categoría de conversión]' role='dimension' type='nominal'>
-              <aliases>
-                <alias key='&quot;Envío de formulario&quot;' value='Envío formulario' />
-                <alias key='&quot;Llamada de teléfono&quot;' value='Llamada teléfono' />
-              </aliases>
-            </column>
-            <column-instance column='[Categoría de conversión]' derivation='None' name='[none:Categoría de conversión:nk]' pivot='key' type='nominal' />
-            <column-instance column='[Acciones categoría de conversión]' derivation='Sum' name='[sum:Acciones categoría de conversión:qk]' pivot='key' type='quantitative' />
-            <column-instance column='[Calculation_2631087412430807117]' derivation='Sum' name='[sum:Calculation_2631087412430807117:qk]' pivot='key' type='quantitative' />
-          </datasource-dependencies>
-          <filter class='categorical' column='[federated.158grqn05wb6k41fhtaca1m0eptk].[none:Categoría de conversión:nk]'>
-            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
-              <groupfilter function='member' level='[none:Categoría de conversión:nk]' member='&quot;Contacto&quot;' />
-              <groupfilter function='member' level='[none:Categoría de conversión:nk]' member='&quot;Engagement&quot;' />
-              <groupfilter function='member' level='[none:Categoría de conversión:nk]' member='&quot;Envío de formulario&quot;' />
-              <groupfilter function='member' level='[none:Categoría de conversión:nk]' member='&quot;Llamada de teléfono&quot;' />
-              <groupfilter function='member' level='[none:Categoría de conversión:nk]' member='&quot;Obtener dirección&quot;' />
-            </groupfilter>
-          </filter>
-          <computed-sort column='[federated.158grqn05wb6k41fhtaca1m0eptk].[none:Categoría de conversión:nk]' direction='DESC' using='[federated.158grqn05wb6k41fhtaca1m0eptk].[sum:Acciones categoría de conversión:qk]' />
-          <slices>
-            <column>[federated.158grqn05wb6k41fhtaca1m0eptk].[none:Categoría de conversión:nk]</column>
-          </slices>
-          <aggregation value='true' />
-        </view>
-        <style>
-          <style-rule element='axis'>
-            <format attr='title' class='0' field='[federated.158grqn05wb6k41fhtaca1m0eptk].[sum:Calculation_2631087412430807117:qk]' scope='cols' value='Conversiones' />
-            <format attr='stroke-size' value='0' />
-            <format attr='line-visibility' value='off' />
-            <format attr='tick-color' value='#00000000' />
-          </style-rule>
-          <style-rule element='header'>
-            <format attr='border-width' data-class='total' scope='cols' value='0' />
-            <format attr='border-style' data-class='total' scope='cols' value='none' />
-          </style-rule>
-          <style-rule element='label'>
-            <format attr='font-weight' field='[federated.158grqn05wb6k41fhtaca1m0eptk].[none:Categoría de conversión:nk]' value='bold' />
-            <format attr='vertical-align' field='[federated.158grqn05wb6k41fhtaca1m0eptk].[none:Categoría de conversión:nk]' value='center' />
-            <format attr='text-align' field='[federated.158grqn05wb6k41fhtaca1m0eptk].[none:Categoría de conversión:nk]' value='right' />
-          </style-rule>
-          <style-rule element='pane'>
-            <format attr='border-width' data-class='total' scope='cols' value='0' />
-            <format attr='border-style' data-class='total' scope='cols' value='none' />
-          </style-rule>
-          <style-rule element='worksheet'>
-            <format attr='display-field-labels' scope='rows' value='false' />
-          </style-rule>
-          <style-rule element='dropline'>
-            <format attr='stroke-size' value='0' />
-            <format attr='line-visibility' value='off' />
-          </style-rule>
-          <style-rule element='refline'>
-            <format attr='stroke-size' value='0' />
-            <format attr='line-visibility' value='off' />
-          </style-rule>
-          <style-rule element='gridline'>
-            <format attr='stroke-size' scope='cols' value='0' />
-            <format attr='line-visibility' scope='cols' value='off' />
-          </style-rule>
-          <style-rule element='zeroline'>
-            <format attr='stroke-size' value='0' />
-            <format attr='line-visibility' value='off' />
-          </style-rule>
-        </style>
-        <panes>
-          <pane selection-relaxation-option='selection-relaxation-allow'>
-            <view>
-              <breakdown value='auto' />
-            </view>
-            <mark class='Automatic' />
-            <encodings>
-              <color column='[federated.158grqn05wb6k41fhtaca1m0eptk].[none:Categoría de conversión:nk]' />
-            </encodings>
-            <style>
-              <style-rule element='datalabel'>
-                <format attr='color-mode' value='auto' />
-                <format attr='font-size' value='12' />
-                <format attr='font-weight' value='bold' />
-              </style-rule>
-              <style-rule element='mark'>
-                <format attr='mark-labels-show' value='true' />
-                <format attr='mark-labels-cull' value='true' />
-              </style-rule>
-              <style-rule element='trendline'>
-                <format attr='stroke-size' value='0' />
-                <format attr='line-visibility' value='off' />
-              </style-rule>
-            </style>
-          </pane>
-        </panes>
-        <rows>[federated.158grqn05wb6k41fhtaca1m0eptk].[none:Categoría de conversión:nk]</rows>
-        <cols>[federated.158grqn05wb6k41fhtaca1m0eptk].[sum:Calculation_2631087412430807117:qk]</cols>
-        <mark-labels>
-          <mark-label id='0' label-state='off'>
-            <tuple-reference>
-              <tuple-descriptor>
-                <pane-descriptor>
-                  <x-fields>
-                    <field>[federated.158grqn05wb6k41fhtaca1m0eptk].[sum:Calculation_2631087412430807117:qk]</field>
-                  </x-fields>
-                  <y-fields>
-                    <field>[federated.158grqn05wb6k41fhtaca1m0eptk].[none:Categoría de conversión:nk]</field>
-                  </y-fields>
-                </pane-descriptor>
-                <columns>
-                  <field>[federated.158grqn05wb6k41fhtaca1m0eptk].[none:Categoría de conversión:nk]</field>
-                  <field>[federated.158grqn05wb6k41fhtaca1m0eptk].[sum:Acciones categoría de conversión:qk]</field>
-                  <field>[federated.158grqn05wb6k41fhtaca1m0eptk].[sum:Calculation_2631087412430807117:qk]</field>
-                </columns>
-              </tuple-descriptor>
-              <tuple>
-                <value>&quot;Engagement&quot;</value>
-                <value>3540</value>
-                <value>354</value>
-              </tuple>
-            </tuple-reference>
-          </mark-label>
-          <mark-label id='1' label-state='off'>
-            <tuple-reference>
-              <tuple-descriptor>
-                <pane-descriptor>
-                  <x-fields>
-                    <field>[federated.158grqn05wb6k41fhtaca1m0eptk].[sum:Calculation_2631087412430807117:qk]</field>
-                  </x-fields>
-                  <y-fields>
-                    <field>[federated.158grqn05wb6k41fhtaca1m0eptk].[none:Categoría de conversión:nk]</field>
-                  </y-fields>
-                </pane-descriptor>
-                <columns>
-                  <field>[federated.158grqn05wb6k41fhtaca1m0eptk].[none:Categoría de conversión:nk]</field>
-                  <field>[federated.158grqn05wb6k41fhtaca1m0eptk].[sum:Acciones categoría de conversión:qk]</field>
-                  <field>[federated.158grqn05wb6k41fhtaca1m0eptk].[sum:Calculation_2631087412430807117:qk]</field>
-                </columns>
-              </tuple-descriptor>
-              <tuple>
-                <value>&quot;Obtener dirección&quot;</value>
-                <value>1790</value>
-                <value>179</value>
-              </tuple>
-            </tuple-reference>
-          </mark-label>
-          <mark-label id='2' label-state='off'>
-            <tuple-reference>
-              <tuple-descriptor>
-                <pane-descriptor>
-                  <x-fields>
-                    <field>[federated.158grqn05wb6k41fhtaca1m0eptk].[sum:Calculation_2631087412430807117:qk]</field>
-                  </x-fields>
-                  <y-fields>
-                    <field>[federated.158grqn05wb6k41fhtaca1m0eptk].[none:Categoría de conversión:nk]</field>
-                  </y-fields>
-                </pane-descriptor>
-                <columns>
-                  <field>[federated.158grqn05wb6k41fhtaca1m0eptk].[none:Categoría de conversión:nk]</field>
-                  <field>[federated.158grqn05wb6k41fhtaca1m0eptk].[sum:Acciones categoría de conversión:qk]</field>
-                  <field>[federated.158grqn05wb6k41fhtaca1m0eptk].[sum:Calculation_2631087412430807117:qk]</field>
-                </columns>
-              </tuple-descriptor>
-              <tuple>
-                <value>&quot;Contacto&quot;</value>
-                <value>380</value>
-                <value>38</value>
-              </tuple>
-            </tuple-reference>
-          </mark-label>
-        </mark-labels>
-      </table>
-      <simple-id uuid='{4CE9A0CD-2BF1-4C9E-951C-5186FC4B4FD6}' />
     </worksheet>
     <worksheet name='Conversión Total'>
       <layout-options>
@@ -7135,6 +7203,14 @@
             <encodings>
               <color column='[federated.0i9dqy51kzadz81dizvjz0m8rut6].[Multiple Values]' />
             </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true'><![CDATA[<[federated.0i9dqy51kzadz81dizvjz0m8rut6].[none:Calculation_2631087411070447625:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'><![CDATA[<[federated.0i9dqy51kzadz81dizvjz0m8rut6].[:Measure Names]>:	]]></run>
+                <run bold='true'><![CDATA[<[federated.0i9dqy51kzadz81dizvjz0m8rut6].[Multiple Values]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
             <style>
               <style-rule element='cell'>
                 <format attr='text-align' value='center' />
@@ -7315,6 +7391,14 @@
             <encodings>
               <color column='[federated.1lp1asc0fhqnv91gyifz60h34q1a].[Multiple Values]' />
             </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true'><![CDATA[<[federated.1lp1asc0fhqnv91gyifz60h34q1a].[none:Calculation_2631087411079536656:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'><![CDATA[<[federated.1lp1asc0fhqnv91gyifz60h34q1a].[:Measure Names]>:	]]></run>
+                <run bold='true'><![CDATA[<[federated.1lp1asc0fhqnv91gyifz60h34q1a].[Multiple Values]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
             <style>
               <style-rule element='cell'>
                 <format attr='text-align' value='center' />
@@ -7344,7 +7428,7 @@
       </table>
       <simple-id uuid='{3549644F-C6FE-4F1D-9E53-F66726E8B230}' />
     </worksheet>
-    <worksheet name='Engagement (2)'>
+    <worksheet name='Engagement  '>
       <layout-options>
         <title>
           <formatted-text>
@@ -7465,6 +7549,7 @@
             <format attr='border-style' data-class='subtotal' scope='cols' value='none' />
             <format attr='border-width' data-class='subtotal' scope='rows' value='0' />
             <format attr='border-style' data-class='subtotal' scope='rows' value='none' />
+            <format attr='width' field='[federated.1lp1asc0fhqnv91gyifz60h34q1a].[none:Calculation_2631087411079536656:nk]' value='116' />
           </style-rule>
           <style-rule element='mark'>
             <encoding attr='size-bar' field='[federated.1lp1asc0fhqnv91gyifz60h34q1a].[usr:AggregatedImpressions (copy)_2631087411232493602:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
@@ -7499,6 +7584,14 @@
             <encodings>
               <color column='[federated.1lp1asc0fhqnv91gyifz60h34q1a].[Multiple Values]' />
             </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true'><![CDATA[<[federated.1lp1asc0fhqnv91gyifz60h34q1a].[none:Calculation_2631087411079536656:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'><![CDATA[<[federated.1lp1asc0fhqnv91gyifz60h34q1a].[:Measure Names]>:	]]></run>
+                <run bold='true'><![CDATA[<[federated.1lp1asc0fhqnv91gyifz60h34q1a].[Multiple Values]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
             <style>
               <style-rule element='cell'>
                 <format attr='text-align' value='center' />
@@ -7645,6 +7738,14 @@
             <encodings>
               <color column='[federated.0mkd0ba0kzn2xl176brxq0wi2ex0].[:Measure Names]' />
             </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true'><![CDATA[<[federated.0mkd0ba0kzn2xl176brxq0wi2ex0].[none:Calculation_2631087411584917574:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'><![CDATA[<[federated.0mkd0ba0kzn2xl176brxq0wi2ex0].[:Measure Names]>:	]]></run>
+                <run bold='true'><![CDATA[<[federated.0mkd0ba0kzn2xl176brxq0wi2ex0].[Multiple Values]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
             <style>
               <style-rule element='mark'>
                 <format attr='mark-labels-cull' value='true' />
@@ -7729,8 +7830,8 @@
         <zone h='28000' id='26' name='Clics/Impresiones' w='30615' x='3000' y='67077' />
         <zone h='29154' id='28' name='Conversiones' w='30615' x='66846' y='66769' />
         <zone h='28846' id='29' name='Sesiones vs. Sesiones Interactivas' w='29231' x='36923' y='67000' />
-        <zone h='14538' id='32' name='Conversion' w='36615' x='18231' y='48692' />
-        <zone h='14538' id='33' name='Conversion ' w='40846' x='57154' y='48462' />
+        <zone h='14538' id='32' name='Conversión' w='36615' x='18231' y='48692' />
+        <zone h='14538' id='33' name='Conversión  ' w='40846' x='57154' y='48462' />
         <zone forceUpdate='true' h='4077' id='34' type-v2='text' w='12385' x='3769' y='4000'>
           <formatted-text>
             <run fontcolor='#d4d4d4'>Periodo:</run>
@@ -7739,9 +7840,9 @@
           </formatted-text>
         </zone>
         <zone h='2769' id='37' is-centered='0' is-scaled='1' param='/Users/cesarchaparro/Desktop/GitHub/Chapoteos/assets/url.png' type-v2='bitmap' w='4615' x='3923' y='67538' />
-        <zone h='52692' hidden-by-user='true' id='38' param='horz' type-v2='layout-flow' w='80308' x='18615' y='12692'>
-          <zone h='52692' hidden-by-user='true' id='39' name='Awareness  ' show-title='false' w='80308' x='18615' y='12692'>
-            <layout-cache minwidth='341' type-h='fixed' type-w='scalable' />
+        <zone h='54462' hidden-by-user='true' id='42' param='horz' type-v2='layout-flow' w='76154' x='18462' y='10154'>
+          <zone h='54308' hidden-by-user='true' id='43' name='Engagement  ' w='76000' x='18539' y='10231'>
+            <layout-cache cell-count-w='4' non-cell-size-w='117' type-h='cell' type-w='cell' />
             <zone-style>
               <format attr='border-color' value='#000000' />
               <format attr='border-style' value='none' />
@@ -7750,27 +7851,15 @@
             </zone-style>
           </zone>
           <zone-style>
-            <format attr='border-color' value='#000000' />
-            <format attr='border-style' value='none' />
-            <format attr='border-width' value='0' />
+            <format attr='border-color' value='#4e79a7' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
             <format attr='background-color' value='#ffffff' />
           </zone-style>
         </zone>
-        <zone h='1615' id='41' type-v2='dashboard-object' w='1615' x='64615' y='10462'>
-          <button action='' active-visual-state-index='1'>
-            <toggle-action>tabdoc:toggle-button-click-action window-id=&quot;{F47B0947-8B44-4ADB-94E2-A3D65482EC04}&quot; zone-id=&quot;41&quot; zone-ids=[38]</toggle-action>
-            <button-visual-state>
-              <image-path>/Users/cesarchaparro/Desktop/GitHub/Chapoteos/assets/expand_less.png</image-path>
-            </button-visual-state>
-            <button-visual-state>
-              <image-path>/Users/cesarchaparro/Desktop/GitHub/Chapoteos/assets/expand.png</image-path>
-              <tooltip-text>Expandir tabla</tooltip-text>
-            </button-visual-state>
-          </button>
-        </zone>
-        <zone h='54462' hidden-by-user='true' id='42' param='horz' type-v2='layout-flow' w='72385' x='18462' y='10154'>
-          <zone h='54462' hidden-by-user='true' id='43' name='Engagement (2)' w='72385' x='18462' y='10154'>
-            <layout-cache cell-count-w='4' non-cell-size-w='161' type-h='cell' type-w='cell' />
+        <zone h='52692' hidden-by-user='true' id='38' layout-strategy-id='distribute-evenly' param='horz' type-v2='layout-flow' w='76077' x='18154' y='12692'>
+          <zone fixed-size='1032' h='52539' hidden-by-user='true' id='39' is-fixed='true' name='Awareness    ' show-title='false' w='75923' x='18231' y='12769'>
+            <layout-cache minwidth='341' type-h='cell' type-w='scalable' />
             <zone-style>
               <format attr='border-color' value='#000000' />
               <format attr='border-style' value='none' />
@@ -7779,13 +7868,30 @@
             </zone-style>
           </zone>
           <zone-style>
-            <format attr='border-color' value='#000000' />
-            <format attr='border-style' value='none' />
-            <format attr='border-width' value='0' />
+            <format attr='border-color' value='#4e79a7' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
             <format attr='background-color' value='#ffffff' />
           </zone-style>
         </zone>
-        <zone h='1692' id='44' type-v2='dashboard-object' w='1615' x='65615' y='28615'>
+        <zone h='53308' hidden-by-user='true' id='45' param='horz' type-v2='layout-flow' w='76077' x='18385' y='10000'>
+          <zone h='53154' hidden-by-user='true' id='46' name='Conversión ' show-title='false' w='75923' x='18462' y='10077'>
+            <layout-cache cell-count-w='7' non-cell-size-w='92' type-h='cell' type-w='cell' />
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#4e79a7' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+            <format attr='background-color' value='#ffffff' />
+          </zone-style>
+        </zone>
+        <zone h='1692' id='44' type-v2='dashboard-object' w='1615' x='95615' y='28923'>
           <button action='' active-visual-state-index='1'>
             <toggle-action>tabdoc:toggle-button-click-action window-id=&quot;{F47B0947-8B44-4ADB-94E2-A3D65482EC04}&quot; zone-id=&quot;44&quot; zone-ids=[42]</toggle-action>
             <button-visual-state>
@@ -7797,24 +7903,12 @@
             </button-visual-state>
           </button>
         </zone>
-        <zone h='38462' hidden-by-user='true' id='45' param='horz' type-v2='layout-flow' w='79692' x='18385' y='10000'>
-          <zone h='38462' hidden-by-user='true' id='46' name='Conversion (2)' show-title='false' w='79692' x='18385' y='10000'>
-            <layout-cache cell-count-w='7' non-cell-size-w='160' type-h='cell' type-w='cell' />
-            <zone-style>
-              <format attr='border-color' value='#000000' />
-              <format attr='border-style' value='none' />
-              <format attr='border-width' value='0' />
-              <format attr='margin' value='4' />
-            </zone-style>
-          </zone>
-          <zone-style>
-            <format attr='border-color' value='#000000' />
-            <format attr='border-style' value='none' />
-            <format attr='border-width' value='0' />
-            <format attr='background-color' value='#ffffff' />
-          </zone-style>
+        <zone forceUpdate='true' h='2923' id='48' type-v2='text' w='36231' x='18231' y='1846'>
+          <formatted-text>
+            <run bold='true' fontname='Tableau Bold' fontsize='14'>Análisis rendimiento campañas digitales Chapoteos</run>
+          </formatted-text>
         </zone>
-        <zone h='1692' id='47' type-v2='dashboard-object' w='1538' x='65154' y='48846'>
+        <zone h='1692' id='47' type-v2='dashboard-object' w='1538' x='95846' y='49077'>
           <button action='' active-visual-state-index='1'>
             <toggle-action>tabdoc:toggle-button-click-action window-id=&quot;{F47B0947-8B44-4ADB-94E2-A3D65482EC04}&quot; zone-id=&quot;47&quot; zone-ids=[45]</toggle-action>
             <button-visual-state>
@@ -7826,11 +7920,6 @@
             </button-visual-state>
           </button>
         </zone>
-        <zone forceUpdate='true' h='2923' id='48' type-v2='text' w='36231' x='18231' y='1846'>
-          <formatted-text>
-            <run bold='true' fontname='Tableau Bold' fontsize='14'>Análisis rendimiento campañas digitales Chapoteos</run>
-          </formatted-text>
-        </zone>
         <zone h='2538' id='49' type-v2='dashboard-object' w='3615' x='89154' y='2615'>
           <button action='' button-click-action-metadata='pdf'>
             <export-button-action>tabdoc:abstract-dashboard-button-export-wrapper dashboard-button-export-type=&quot;pdf&quot; dashboarddoc-id=&quot;{3BD55715-2182-49CA-99E8-A3F3D9E89223}&quot;</export-button-action>
@@ -7840,13 +7929,18 @@
             </button-visual-state>
           </button>
         </zone>
-        <zone forceUpdate='true' h='17846' id='50' param='[com.tableau.pulse-metric].[0.100.0].[tableau:/pulse/extension-assets/dashboard-metric/index.html]' type-v2='dashboard-object' w='31769' x='26154' y='11769'>
-          <add-in add-in-id='com.tableau.pulse-metric' extension-url='tableau:/pulse/extension-assets/dashboard-metric/index.html' extension-version='0.100.0' instance-id='FB05204E058D4090976C17A2E0F10D79'>
-            <instance-settings />
-            <type-settings>
-              <dashboard />
-            </type-settings>
-          </add-in>
+        <zone alt-text='Ver reporte aquí' h='2769' id='50' is-centered='0' is-scaled='1' param='/Users/cesarchaparro/Desktop/GitHub/Chapoteos/assets/report.png' type-v2='bitmap' url='https://cesarchaparro1974.github.io/chapoteos/' w='2769' x='86538' y='2462' />
+        <zone h='1615' id='41' type-v2='dashboard-object' w='1615' x='95077' y='10615'>
+          <button action='' active-visual-state-index='1'>
+            <toggle-action>tabdoc:toggle-button-click-action window-id=&quot;{F47B0947-8B44-4ADB-94E2-A3D65482EC04}&quot; zone-id=&quot;41&quot; zone-ids=[38]</toggle-action>
+            <button-visual-state>
+              <image-path>/Users/cesarchaparro/Desktop/GitHub/Chapoteos/assets/expand_less.png</image-path>
+            </button-visual-state>
+            <button-visual-state>
+              <image-path>/Users/cesarchaparro/Desktop/GitHub/Chapoteos/assets/expand.png</image-path>
+              <tooltip-text>Expandir tabla</tooltip-text>
+            </button-visual-state>
+          </button>
         </zone>
       </zones>
       <devicelayouts>
@@ -7983,7 +8077,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='189' h='14538' id='33' is-fixed='true' name='Conversion ' w='40846' x='57154' y='48462'>
+                <zone fixed-size='189' h='14538' id='33' is-fixed='true' name='Conversión  ' w='40846' x='57154' y='48462'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -7992,7 +8086,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='189' h='14538' id='32' is-fixed='true' name='Conversion' w='36615' x='18231' y='48692'>
+                <zone fixed-size='189' h='14538' id='32' is-fixed='true' name='Conversión' w='36615' x='18231' y='48692'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -8042,7 +8136,7 @@
       <simple-id uuid='{3BD55715-2182-49CA-99E8-A3F3D9E89223}' />
     </dashboard>
   </dashboards>
-  <windows source-height='177'>
+  <windows pres-mode='true' source-height='177'>
     <window class='worksheet' name='Coste Campañas'>
       <cards>
         <edge name='left'>
@@ -8273,7 +8367,7 @@
       </viewpoint>
       <simple-id uuid='{01BE9B90-D969-4C41-B422-E9202BA98DCC}' />
     </window>
-    <window class='worksheet' name='Conversion'>
+    <window class='worksheet' name='Conversión'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -8302,7 +8396,7 @@
       </viewpoint>
       <simple-id uuid='{27FCA22E-E96B-4BE6-AC20-286742F13E2D}' />
     </window>
-    <window class='worksheet' name='Conversion '>
+    <window class='worksheet' name='Conversión  '>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -8420,22 +8514,22 @@
         <viewpoint name='Awareness '>
           <zoom type='entire-view' />
         </viewpoint>
-        <viewpoint name='Awareness  '>
+        <viewpoint name='Awareness    '>
           <zoom type='entire-view' />
         </viewpoint>
         <viewpoint name='Clics/Impresiones'>
           <zoom type='entire-view' />
         </viewpoint>
-        <viewpoint name='Conversion'>
-          <zoom type='entire-view' />
-        </viewpoint>
-        <viewpoint name='Conversion '>
-          <zoom type='entire-view' />
-        </viewpoint>
-        <viewpoint name='Conversion (2)'>
-          <zoom type='entire-view' />
-        </viewpoint>
         <viewpoint name='Conversiones'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Conversión'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Conversión '>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Conversión  '>
           <zoom type='entire-view' />
         </viewpoint>
         <viewpoint name='Conversión Total'>
@@ -8459,17 +8553,17 @@
         <viewpoint name='Engagement '>
           <zoom type='entire-view' />
         </viewpoint>
-        <viewpoint name='Engagement (2)'>
+        <viewpoint name='Engagement  '>
           <zoom type='entire-view' />
         </viewpoint>
         <viewpoint name='Sesiones vs. Sesiones Interactivas'>
           <zoom type='entire-view' />
         </viewpoint>
       </viewpoints>
-      <active id='50' />
+      <active id='49' />
       <simple-id uuid='{F47B0947-8B44-4ADB-94E2-A3D65482EC04}' />
     </window>
-    <window class='worksheet' name='Conversion (2)'>
+    <window class='worksheet' name='Conversión '>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -8498,7 +8592,7 @@
       </viewpoint>
       <simple-id uuid='{95F97EE4-2481-48D1-9E7C-6475C1214E2B}' />
     </window>
-    <window class='worksheet' name='Engagement (2)'>
+    <window class='worksheet' name='Engagement  '>
       <cards>
         <edge name='left'>
           <strip size='266'>
@@ -8527,7 +8621,7 @@
       </viewpoint>
       <simple-id uuid='{A4A8AD08-5FCA-46B1-89EC-60964EF6EFCB}' />
     </window>
-    <window class='worksheet' name='Awareness  '>
+    <window class='worksheet' name='Awareness    '>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -8557,32 +8651,4 @@
       <simple-id uuid='{BD203E5B-8030-4080-A53D-FE0858D42EDE}' />
     </window>
   </windows>
-  <referenced-extensions>
-    <referenced-extension>
-      <manifest manifest-version='0.1'>
-        <dashboard-extension extension-version='0.100.0' id='com.tableau.pulse-metric'>
-          <default-locale>en_US</default-locale>
-          <name resource-id='name' />
-          <description>Display Tableau Pulse metric</description>
-          <author email='customerservice@tableau.com' name='Tableau' organization='Tableau' website='https://www.tableau.com' />
-          <min-api-version>1.10</min-api-version>
-          <source-location>
-            <url>tableau:/pulse/extension-assets/dashboard-metric/index.html</url>
-          </source-location>
-          <icon />
-          <context-menu>
-            <configure-context-menu-item />
-          </context-menu>
-        </dashboard-extension>
-        <resources>
-          <resource id='name'>
-            <text locale='en_US'>Pulse Metric</text>
-          </resource>
-        </resources>
-      </manifest>
-      <referenced-views>
-        <referenced-view instances='1' viewId='Dashboard 1' />
-      </referenced-views>
-    </referenced-extension>
-  </referenced-extensions>
 </workbook>
