@@ -6,6 +6,7 @@
 Comprehensive marketing analytics project for Chapoteos, a swimming school, analyzing performance across Google Ads and Meta platforms, along with website behavior analysis. The project covers data from January to February 2025, providing actionable insights for digital marketing optimization.
 
 Check out my notebook here: [Open Jupyter Notebook](notebook_final_eng.ipynb)
+Visit my dashboard in Tableau here: [Tableau Dashboard](https://public.tableau.com/views/ChapoteosFunnel/Dashboard1?:language=es-ES&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 ## Key Analysis Areas
 

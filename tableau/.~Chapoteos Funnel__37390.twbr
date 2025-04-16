@@ -8136,7 +8136,7 @@
       <simple-id uuid='{3BD55715-2182-49CA-99E8-A3F3D9E89223}' />
     </dashboard>
   </dashboards>
-  <windows pres-mode='true' source-height='177'>
+  <windows source-height='177'>
     <window class='worksheet' name='Coste Campañas'>
       <cards>
         <edge name='left'>
@@ -8560,7 +8560,7 @@
           <zoom type='entire-view' />
         </viewpoint>
       </viewpoints>
-      <active id='49' />
+      <active id='50' />
       <simple-id uuid='{F47B0947-8B44-4ADB-94E2-A3D65482EC04}' />
     </window>
     <window class='worksheet' name='Conversión '>
