@@ -9,6 +9,9 @@ Check out my notebook here: [Open Jupyter Notebook](notebook_final_eng.ipynb) <b
 
 Visit my dashboard in Tableau here: [Tableau Dashboard](https://public.tableau.com/views/ChapoteosFunnel/Dashboard1?:language=es-ES&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
+
+![alt text](image.png)
+
 ## Key Analysis Areas
 
 ### Google Ads Performance

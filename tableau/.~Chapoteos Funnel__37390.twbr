@@ -26,7 +26,7 @@
     <ZoneBackgroundTransparency />
     <ZoneVisibilityControl />
   </document-format-change-manifest>
-  <repository-location id='ChapoteosFunnel' path='/workbooks' revision='2.2' />
+  <repository-location id='ChapoteosFunnel' path='/workbooks' revision='2.8' />
   <preferences>
     <preference name='ui.encoding.shelf.height' value='24' />
     <preference name='ui.shelf.height' value='26' />
@@ -5498,6 +5498,7 @@
             <format attr='border-style' data-class='total' value='none' />
           </style-rule>
           <style-rule element='label'>
+            <format attr='display' field='[federated.1lp1asc0fhqnv91gyifz60h34q1a].[:Measure Names]' value='false' />
             <format attr='font-weight' field='[federated.1lp1asc0fhqnv91gyifz60h34q1a].[none:Calculation_2631087411079536656:nk]' value='bold' />
           </style-rule>
           <style-rule element='pane'>
@@ -5536,6 +5537,18 @@
             <format attr='stroke-size' scope='rows' value='1' />
             <format attr='line-visibility' scope='rows' value='on' />
             <format attr='line-pattern-only' scope='rows' value='solid' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='font-size' value='8' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='font-size' value='8' />
+            <format attr='text-align' value='right' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.1lp1asc0fhqnv91gyifz60h34q1a].[:Measure Names]' value=''>
+              <formatted-text />
+            </format>
           </style-rule>
           <style-rule element='parameter-ctrl'>
             <format attr='title' field='[Parameters].[Parameter 2]' value='Filtro Meta'>
@@ -7781,7 +7794,7 @@
     </worksheet>
   </worksheets>
   <dashboards>
-    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard'>
       <style />
       <size maxheight='1300' maxwidth='1300' minheight='1300' minwidth='1300' sizing-mode='fixed' />
       <datasources>
@@ -7807,7 +7820,7 @@
         </column>
       </datasource-dependencies>
       <zones>
-        <zone forceUpdate='true' h='98000' id='11' is-centered='0' is-scaled='1' param='/Users/cesarchaparro/Desktop/GitHub/Chapoteos/analytics_data/figma/background/chapoteos.png' type-v2='bitmap' w='97692' x='1385' y='2105' />
+        <zone forceUpdate='true' h='98000' id='11' is-scaled='1' param='/Users/cesarchaparro/Desktop/GitHub/Chapoteos/analytics_data/figma/background/chapoteos.png' type-v2='bitmap' w='97692' x='1385' y='2105' />
         <zone h='7846' id='12' name='Coste Total Marketing Digital' w='13231' x='3385' y='10077' />
         <zone h='5462' id='16' name='Coste Campañas' w='11692' x='4615' y='22154' />
         <zone h='5923' id='17' name='Coste Set Anuncios' w='11615' x='4769' y='28462' />
@@ -7819,12 +7832,12 @@
         <zone h='19462' id='25' name='Engagement ' w='40923' x='57077' y='28692' />
         <zone custom-title='true' h='3154' id='23' mode='compact' param='[Parameters].[Parameter 2]' type-v2='paramctrl' w='13231' x='81385' y='6308'>
           <formatted-text>
-            <run>Filtrar resultados</run>
+            <run>Filtrar</run>
           </formatted-text>
         </zone>
         <zone custom-title='true' h='3154' id='21' mode='compact' param='[Parameters].[Parameter 1]' type-v2='paramctrl' w='11231' x='41846' y='6154'>
           <formatted-text>
-            <run>Filtrar resultados</run>
+            <run>Filtrar</run>
           </formatted-text>
         </zone>
         <zone h='28000' id='26' name='Clics/Impresiones' w='30615' x='3000' y='67077' />
@@ -7842,7 +7855,7 @@
         <zone h='2769' id='37' is-centered='0' is-scaled='1' param='/Users/cesarchaparro/Desktop/GitHub/Chapoteos/assets/url.png' type-v2='bitmap' w='4615' x='3923' y='67538' />
         <zone h='54462' hidden-by-user='true' id='42' param='horz' type-v2='layout-flow' w='76154' x='18462' y='10154'>
           <zone h='54308' hidden-by-user='true' id='43' name='Engagement  ' w='76000' x='18539' y='10231'>
-            <layout-cache cell-count-w='4' non-cell-size-w='117' type-h='cell' type-w='cell' />
+            <layout-cache type-h='cell' type-w='cell' />
             <zone-style>
               <format attr='border-color' value='#000000' />
               <format attr='border-style' value='none' />
@@ -7876,7 +7889,7 @@
         </zone>
         <zone h='53308' hidden-by-user='true' id='45' param='horz' type-v2='layout-flow' w='76077' x='18385' y='10000'>
           <zone h='53154' hidden-by-user='true' id='46' name='Conversión ' show-title='false' w='75923' x='18462' y='10077'>
-            <layout-cache cell-count-w='7' non-cell-size-w='92' type-h='cell' type-w='cell' />
+            <layout-cache type-h='cell' type-w='cell' />
             <zone-style>
               <format attr='border-color' value='#000000' />
               <format attr='border-style' value='none' />
@@ -7942,14 +7955,52 @@
             </button-visual-state>
           </button>
         </zone>
+        <zone h='3000' id='55' leg-item-layout='horz' name='Awareness ' pane-specification-id='0' param='[federated.1lp1asc0fhqnv91gyifz60h34q1a].[:Measure Names]' type-v2='color' w='19154' x='76615' y='9462' />
       </zones>
       <devicelayouts>
         <devicelayout auto-generated='true' name='Phone'>
-          <size maxheight='3200' minheight='3200' sizing-mode='vscroll' />
+          <size maxheight='4400' minheight='4400' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='36' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98770' id='35' param='vert' type-v2='layout-flow' w='98770' x='615' y='615'>
-                <zone fixed-size='280' forceUpdate='true' h='98000' id='11' is-centered='0' is-fixed='true' is-scaled='1' param='/Users/cesarchaparro/Desktop/GitHub/Chapoteos/analytics_data/figma/background/chapoteos.png' type-v2='bitmap' w='97692' x='1385' y='2105'>
+            <zone h='100000' id='61' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98770' id='60' param='vert' type-v2='layout-flow' w='98770' x='615' y='615'>
+                <zone forceUpdate='true' h='2923' id='48' type-v2='text' w='36231' x='18231' y='1846'>
+                  <formatted-text>
+                    <run bold='true' fontname='Tableau Bold' fontsize='14'>Análisis rendimiento campañas digitales Chapoteos</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' forceUpdate='true' h='98000' id='11' is-fixed='true' is-scaled='1' param='/Users/cesarchaparro/Desktop/GitHub/Chapoteos/analytics_data/figma/background/chapoteos.png' type-v2='bitmap' w='97692' x='1385' y='2105'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone alt-text='Ver reporte aquí' fixed-size='36' h='2769' id='50' is-centered='0' is-fixed='true' is-scaled='1' param='/Users/cesarchaparro/Desktop/GitHub/Chapoteos/assets/report.png' type-v2='bitmap' url='https://cesarchaparro1974.github.io/chapoteos/' w='2769' x='86538' y='2462'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='2538' id='49' type-v2='dashboard-object' w='3615' x='89154' y='2615'>
+                  <button action='' button-click-action-metadata='pdf'>
+                    <export-button-action>tabdoc:abstract-dashboard-button-export-wrapper dashboard-button-export-type=&quot;pdf&quot; dashboarddoc-id=&quot;{3BD55715-2182-49CA-99E8-A3F3D9E89223}&quot;</export-button-action>
+                    <button-visual-state>
+                      <image-path>/Users/cesarchaparro/Desktop/GitHub/Chapoteos/assets/download.png</image-path>
+                      <tooltip-text>Haz clic para descargar</tooltip-text>
+                    </button-visual-state>
+                  </button>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -7974,7 +8025,7 @@
                 </zone>
                 <zone custom-title='true' h='3154' id='21' mode='compact' param='[Parameters].[Parameter 1]' type-v2='paramctrl' w='11231' x='41846' y='6154'>
                   <formatted-text>
-                    <run>Filtrar resultados</run>
+                    <run>Filtrar</run>
                   </formatted-text>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -7986,7 +8037,7 @@
                 </zone>
                 <zone custom-title='true' h='3154' id='23' mode='compact' param='[Parameters].[Parameter 2]' type-v2='paramctrl' w='13231' x='81385' y='6308'>
                   <formatted-text>
-                    <run>Filtrar resultados</run>
+                    <run>Filtrar</run>
                   </formatted-text>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -8005,6 +8056,26 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
+                <zone fixed-size='280' h='53154' hidden-by-user='true' id='46' is-fixed='true' name='Conversión ' show-title='false' w='75923' x='18462' y='10077'>
+                  <layout-cache type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='54308' hidden-by-user='true' id='43' is-fixed='true' name='Engagement  ' w='76000' x='18539' y='10231'>
+                  <layout-cache type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
                 <zone fixed-size='272' h='20923' id='20' is-fixed='true' name='Awareness' w='37462' x='18231' y='10308'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -8015,6 +8086,25 @@
                   </zone-style>
                 </zone>
                 <zone fixed-size='231' h='17769' id='22' is-fixed='true' name='Awareness ' w='41000' x='57077' y='10308'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='3000' id='55' leg-item-layout='horz' name='Awareness ' pane-specification-id='0' param='[federated.1lp1asc0fhqnv91gyifz60h34q1a].[:Measure Names]' type-v2='color' w='19154' x='76615' y='9462'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='52539' hidden-by-user='true' id='39' is-fixed='true' name='Awareness    ' show-title='false' w='75923' x='18231' y='12769'>
+                  <layout-cache minwidth='341' type-h='cell' type-w='scalable' />
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -8122,6 +8212,15 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
+                <zone fixed-size='36' h='2769' id='37' is-centered='0' is-fixed='true' is-scaled='1' param='/Users/cesarchaparro/Desktop/GitHub/Chapoteos/assets/url.png' type-v2='bitmap' w='4615' x='3923' y='67538'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
               </zone>
               <zone-style>
                 <format attr='border-color' value='#000000' />
@@ -8136,7 +8235,7 @@
       <simple-id uuid='{3BD55715-2182-49CA-99E8-A3F3D9E89223}' />
     </dashboard>
   </dashboards>
-  <windows source-height='177'>
+  <windows pres-mode='true' source-height='177'>
     <window class='worksheet' name='Coste Campañas'>
       <cards>
         <edge name='left'>
@@ -8301,6 +8400,7 @@
         <edge name='right'>
           <strip size='160'>
             <card custom-title='true' mode='compact' param='[Parameters].[Parameter 2]' type='parameter' />
+            <card pane-specification-id='0' param='[federated.1lp1asc0fhqnv91gyifz60h34q1a].[:Measure Names]' show-title='false' type='color' />
           </strip>
         </edge>
       </cards>
@@ -8506,7 +8606,7 @@
       </viewpoint>
       <simple-id uuid='{ED6CC12B-5A01-4FE3-B1DC-46F20248BCDE}' />
     </window>
-    <window class='dashboard' maximized='true' name='Dashboard 1'>
+    <window class='dashboard' maximized='true' name='Dashboard'>
       <viewpoints>
         <viewpoint name='Awareness'>
           <zoom type='entire-view' />
@@ -8560,7 +8660,8 @@
           <zoom type='entire-view' />
         </viewpoint>
       </viewpoints>
-      <active id='50' />
+      <active id='23' />
+      <device-preview selected='Desktop' visible='true' />
       <simple-id uuid='{F47B0947-8B44-4ADB-94E2-A3D65482EC04}' />
     </window>
     <window class='worksheet' name='Conversión '>
