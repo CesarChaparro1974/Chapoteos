@@ -1,0 +1,32 @@
+{
+    "editor.fontLigatures": false,
+    "editor.unicodeHighlight.invisibleCharacters": false,
+    "notebook.output.templateFile": "./hide_code.tplx",
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "git.enableSmartCommit": true,
+    "git.ignoreRebaseWarning": true,
+    "git.openRepositoryInParentFolders": "never",
+    "jupyter.executionAnalysis.enabled": true,
+    "jupyter.exportWithOutputEnabled": true,
+    "markdown-pdf.displayHeaderFooter": false,
+    "notebook.outline.showCodeCells": true,
+    "python.condaPath": "/opt/anaconda3/bin/conda",
+    "python.createEnvironment.trigger": "off",
+    "python.defaultInterpreterPath": "/opt/anaconda3/bin/python",
+    "python.experiments.optInto": [
+        "pythonTerminalEnvVarActivation"
+    ],
+    "python.pythonPath": "/opt/anaconda3/bin/python",
+    "python.terminal.activateEnvInCurrentTerminal": true,
+    "python.terminal.activateEnvironment": true,
+    "security.workspace.trust.untrustedFiles": "open",
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "terminal.integrated.inheritEnv": false,
+    "workbench.editor.enablePreview": false,
+    "workbench.editorAssociations": {
+        "*.copilotmd": "vscode.markdown.preview.editor",
+        "*.csv": "default",
+        "*.xlsx": "default"
+    }
+}

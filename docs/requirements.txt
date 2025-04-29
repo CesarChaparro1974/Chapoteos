@@ -1,0 +1,4 @@
+facebook-business
+google-analytics-data
+pandas
+python-dotenv
